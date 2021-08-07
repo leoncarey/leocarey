@@ -1,13 +1,20 @@
 import React from 'react'
-import { Container } from './styles'
+import { Main, Content } from './styles'
+
+import Sections from './sections'
+import Header from './components/Header';
 
 import './theme.css'
 
 function App() {
   return (
-    <Container>
-      Inner site
-    </Container>
+    <Main>
+      <Content>
+        <Sections />
+      </Content>
+
+      <Header />
+    </Main>
   );
 }
 
