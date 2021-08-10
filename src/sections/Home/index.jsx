@@ -1,11 +1,22 @@
 import React from 'react'
-import { Container } from './styles'
+import { SectionFull } from '../general-styles'
+import { Container, Title, ImgBanner } from './styles'
+
+import leoPhoto from './banner-image.jpg'
 
 const Home = () => {
     return (
-        <Container>
-            Home page
-        </Container>
+        <SectionFull>
+            <Container>
+                <Title>
+                    Olá<br />
+                    Eu sou<br />
+                    <u>Léo Carey</u>
+                </Title>
+
+                <ImgBanner src={leoPhoto} />
+            </Container>
+        </SectionFull>
     )
 }
 
