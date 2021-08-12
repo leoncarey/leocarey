@@ -1,6 +1,11 @@
 import styled from "styled-components"
 
 export const Container = styled.div`
+    position: relative;
+    height: 100vh;
+`
+
+export const InnerContainer = styled.div`
     width: calc(100% + 230px) !important;
     margin-right: -230px;
     max-width: 900px;
@@ -9,7 +14,14 @@ export const Container = styled.div`
     justify-content: flex-end;
     position: relative;
     height: 100%;
+
+    .text-title-banner {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+    }
 `
+
 
 export const Title = styled.h1`
     font-size: 9rem;
@@ -17,9 +29,6 @@ export const Title = styled.h1`
     font-weight: 800;
     color: #F44647;
     letter-spacing: -0.25rem;
-    position: absolute;
-    z-index: 1;
-    left: 0;
 
     u {
         font-weight: 800;
@@ -34,8 +43,4 @@ export const ImgBanner = styled.img`
     object-fit: cover;
     border: none;
     display: block;
-
-    position: relative;
-    z-index: 0;
-    transform: translate3d(0px, 0px, 0px);
 `

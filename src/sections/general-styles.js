@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-export const SectionFull = styled.section`
+export const MainSection = styled.section`
     position: relative;
     width: 100%;
-    height: 100vh;
     display: block;
+    margin-bottom: 800px;
 `

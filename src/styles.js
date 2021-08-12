@@ -17,4 +17,5 @@ export const Content = styled.section`
     width: 1170px;
     max-width: 95%;
     margin: 0 auto;
+    position: relative;
 `
